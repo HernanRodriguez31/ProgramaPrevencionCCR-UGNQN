@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cuadro Sinóptico – Programa CCR</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --accent:#007aff;
+      --accent-dark:#003a7d;
+      --accent-grad:#3895ff;
+      --bg-card:#f4f6fa;
+      --font:'Roboto',sans-serif;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:var(--font);background:#fff;color:#333}
+    h1{text-align:center;font-size:28px;font-weight:700;color:var(--accent);margin:36px 0 44px}
+
+    /* Timeline grid without connectors */
+    .timeline{max-width:1200px;margin:auto;padding:0 16px 80px;display:grid;row-gap:64px}
+
+    .step{display:grid;grid-template-columns:96px 1fr;column-gap:28px}
+
+    /* Rombos */
+    .diamond{width:96px;height:96px;transform:rotate(45deg);border:2px solid var(--accent-dark);border-radius:12px;background:linear-gradient(135deg,var(--accent) 0%,var(--accent-grad) 100%);display:flex;align-items:center;justify-content:center;box-shadow:0 2px 6px rgba(0,0,0,.1)}
+    .diamond span{transform:rotate(-45deg);color:#fff;font-weight:700;font-size:15px;text-align:center}
+
+    /* Tarjetas */
+    .card{background:var(--bg-card);border-left:6px solid var(--accent-dark);padding:20px 24px;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,.07)}
+    .card h3{font-size:17px;font-weight:700;color:var(--accent-dark);margin-bottom:6px}
+    .card p{font-size:14px;line-height:1.38}
+
+    /* Mobile */
+    @media(max-width:700px){
+      .timeline{row-gap:96px}
+      .step{grid-template-columns:100%;row-gap:20px;justify-items:center;text-align:left}
+      .diamond{margin-bottom:12px}
+      .card{border-left:none;border-top:6px solid var(--accent-dark)}
+    }
+    
+  </style>
+</head>
+<body>
+  <h1>Estructura del Programa de Prevención de Cáncer Colorrectal
+    
+  </h1>
+  <section class="timeline">
+
+    <div class="step"><div class="diamond"><span>Paso 1</span></div><div class="card"><h3>Programación</h3><p>Reunión inicial de equipo para definir referentes del programa, población, cantidad de kits FIT, laboratorios y clínicas de derivación.</div></div>
+
+    <div class="step"><div class="diamond"><span>Paso 2</span></div><div class="card"><h3>Planificación</h3><p>Se incluyeron empleados de 49 años o mas. Con una necesidad estimada de 30 Kits FIT. Se coordinó con la Fundación GEDYT para definir la fecha de la charla y obtener su visto bueno sobre el cuestionario.</p></div></div>
+
+    <div class="step"><div class="diamond"><span>Paso 3</span></div><div class="card"><h3>Sesión informativa para el equipo de salud</h3><p>Se ofrecerá una sesión informativa, para presentar los detalles opertivos del programa al equipo de salud responsable de su implementación.</p></div></div>
+
+    <div class="step"><div class="diamond"><span>Paso 4</span></div><div class="card"><h3>Charla de concientización sobre prevención del cáncer colorrectal</h3><p>El Dr. Luis Caro, director de La Fundación Gedyt ofrecerá una charla informativa a toda la población de PAE para concientizar la importancia de la prevención del Cáncer Colorrectal e informar el inicio del programa.</p></div></div>
+
+    <div class="step"><div class="diamond"><span>Paso 5</span></div><div class="card"><h3>Encuesta inicial para empleados</h3><p>Se enviará un formulario online a los empleados, para confirmar participación voluntaria y recabar datos sobre hábitos de vida, antecedentes de salud y síntomas.</p></div></div>
+
+    <div class="step"><div class="diamond"><span>Paso 6</span></div><div class="card"><h3>Evaluación Médica inicial</h3><p>Se realizará una consulta médica para determinar si los pacientes cumplen criterios para realizar el test de FIT o si requieren derivación directa a gastroenterología por alto riesgo.</p></div></div>
+
+    <div class="step"><div class="diamond"><span>Paso 7</span></div><div class="card"><h3>Entrega del Kit FIT</h3><p>Se entregará el Kit FIT en edicicio ECOR I, se registrará en una planilla física y en dashboard y se entregará un flyer con informacion del laboratorio y las instrucciones sobre la toma de muestra.</p></div></div>
+
+    <div class="step"><div class="diamond"><span>Paso 8</span></div><div class="card"><h3>Entrega de muestra</h3><p>El paciente entrega el Kit FIT en el laboratorio asignado, luego escanea el QR del flyer para confirmar la entrega.</p></div></div>
+
+    <div class="step"><div class="diamond"><span>Paso 9</span></div><div class="card"><h3>Análisis y comunicación de resultados</h3><p>El laboratorio analiza las muestras del Test FIT y envía los resultados por correo al equipo de salud responsable.</p></div></div>
+
+    <div class="step"><div class="diamond"><span>Paso 10</span></div><div class="card"><h3>Comunicación de resultados FIT</h3><p>El equipo de salud informa al paciente el resultado del Test FIT, si es negativo se le brinda tranquilidad por un año, si es positivo se explica al paciente y se deriva a gastroenterólogía para realizar de colonoscopía.</p></div></div>
+
+    <div class="step"><div class="diamond"><span>Paso 11</span></div><div class="card"><h3>Programación de colonoscopía</h3><p>El referente de salud coordina con la clínica y el paciente un turno prioritario para la colonoscopía asegurando que se realice lo antes posible.</p></div></div>
+
+    <div class="step"><div class="diamond"><span>Paso 12</span></div><div class="card"><h3>Informe endoscópico y biopsias</h3><p>El centro de gastroenterología envía el informe de la endoscopía y si corresponde de la biopsia al equipo de salud que brindará acompañamiento y soporte al paciente.</p></div></div>
+
+    <div class="step"><div class="diamond"><span>Paso 13</span></div><div class="card"><h3>Cierre y evaluación del programa</h3><p>Se realizará el cierre del programa con la recolección de datos, análisis de KPIs, presentación final y balance global.</p></div></div>
+
+  </section>
+</body>
+</html>
