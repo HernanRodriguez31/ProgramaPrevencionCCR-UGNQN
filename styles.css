@@ -1,0 +1,33 @@
+:root{
+  --accent:#007aff;
+  --accent-dark:#003a7d;
+  --accent-grad:#3895ff;
+  --bg-card:#f4f6fa;
+  --font:'Roboto',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font);background:#fff;color:#333}
+h1{text-align:center;font-size:28px;font-weight:700;color:var(--accent);margin:36px 0 44px}
+
+/* Timeline grid without connectors */
+.timeline{list-style:none;max-width:1200px;margin:auto;padding:0 16px 80px;display:grid;row-gap:64px}
+
+.step{display:grid;grid-template-columns:96px 1fr;column-gap:28px}
+
+/* Rombos */
+.diamond{width:96px;height:96px;transform:rotate(45deg);border:2px solid var(--accent-dark);border-radius:12px;background:linear-gradient(135deg,var(--accent) 0%,var(--accent-grad) 100%);display:flex;align-items:center;justify-content:center;box-shadow:0 2px 6px rgba(0,0,0,.1)}
+.diamond span{transform:rotate(-45deg);color:#fff;font-weight:700;font-size:15px;text-align:center}
+
+/* Tarjetas */
+.card{background:var(--bg-card);border-left:6px solid var(--accent-dark);padding:20px 24px;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,.07)}
+.card h2{font-size:17px;font-weight:700;color:var(--accent-dark);margin-bottom:6px}
+.card p{font-size:14px;line-height:1.38}
+
+/* Mobile */
+@media(max-width:700px){
+  .timeline{row-gap:96px}
+  .step{grid-template-columns:100%;row-gap:20px;justify-items:center;text-align:left}
+  .diamond{margin-bottom:12px}
+  .card{border-left:none;border-top:6px solid var(--accent-dark)}
+}
+
