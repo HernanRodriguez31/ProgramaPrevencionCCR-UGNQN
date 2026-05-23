@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "ppccr-2026"
+  },
+  "targets": {
+    "ppccr-2026": {
+      "hosting": {
+        "inicio": [
+          "prevencion-ccr-inicio"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
